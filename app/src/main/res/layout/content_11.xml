@@ -18,6 +18,8 @@
         android:layout_marginStart="58dp"
         android:layout_marginTop="165dp"
         android:layout_marginEnd="58dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="@font/bad_script"
         android:text="Auth with pin code"
         android:textAllCaps="false" />
 
