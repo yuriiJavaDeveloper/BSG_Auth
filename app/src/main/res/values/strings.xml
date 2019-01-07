@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="title_activity_page3">Page3</string>
+    <string name="call">Call</string>
+    <string name="messageFirst">Send message</string>
+    <string name="title_activity_page4">Page4</string>
+    <string name="action_settings">Settings</string>
+    <string name="error">Error text</string>
+    <string name="messageSecond">Send message again</string>
+    <string name="title_activity_page12">Page12</string>
 </resources>

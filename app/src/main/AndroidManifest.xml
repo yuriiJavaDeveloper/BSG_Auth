@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Page3"
+            android:label="@string/title_activity_page3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Page4"
+            android:label="@string/title_activity_page4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Page12"
+            android:label="@string/title_activity_page12"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
