@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Page3"
+    tools:showIn="@layout/activity_page3"
+    android:screenOrientation="portrait"
+    >
+
+    <Button
+        android:id="@+id/buttonMessage"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="234dp"
+        android:text="@string/messageFirst" />
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonMessage"
+        android:layout_alignStart="@+id/buttonMessage"
+        android:layout_alignLeft="@+id/buttonMessage"
+        android:layout_alignEnd="@+id/buttonMessage"
+        android:layout_alignRight="@+id/buttonMessage"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginBottom="42dp"
+        android:text="@string/call" />
+
+</RelativeLayout>
