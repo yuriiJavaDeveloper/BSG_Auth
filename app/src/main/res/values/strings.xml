@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="desctiptionText">Desctiption text</string>
+    <string name="allDesc">..................</string>
+    <string name="QRcode">Scan QR Cide</string>
+    <string name="enterCode">Enter code manually</string>
 </resources>
