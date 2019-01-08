@@ -17,10 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-
-
-            android:name=".Activity9"
+      //  <activity android:name=".StartActivity"></activity>
+        <activity android:name=".Activity9"
             android:label="@string/title_activity_main2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"/>
