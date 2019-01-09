@@ -1,11 +1,14 @@
 <resources>
-    <string name="app_name">My Application</string>
     <string name="desctiptionText">Desctiption text</string>
     <string name="allDesc">..................</string>
     <string name="QRcode">Scan QR Cide</string>
     <string name="enterCode">Enter code manually</string>
     <string name="app_name">My Application</string>
     <string name="title_activity_main2">Enter code manually</string>
+    <string name="messageFirst">Message</string>
+    <string name="messageSecond">Send your message again</string>
+    <string name="error">Error</string>
+    <string name="call">Call</string>
     <string name="title_activity_main3">Decrypted message</string>
     <string name="title_activity_main4">Auth</string>
     <string name="title_activity_9">Activity9</string>
