@@ -13,7 +13,7 @@ public class Main7Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main7);
 
         text = findViewById(R.id.textDesc);
         buttonScan = findViewById(R.id.buttonQRcode);
