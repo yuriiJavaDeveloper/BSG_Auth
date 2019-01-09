@@ -10,17 +10,16 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="236dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="165dp"
-        android:layout_marginEnd="58dp"
-        android:background="@android:color/background_light"
-        android:fontFamily="@font/bad_script"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="57dp"
         android:text="Auth with pin code"
-        android:textAllCaps="false" />
+        android:textAllCaps="false"
+        android:textSize="20sp" />
 
 </RelativeLayout>

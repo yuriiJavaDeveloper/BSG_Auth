@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_9">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonOk"
         android:layout_width="323dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -19,7 +19,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="61dp"
         android:text="OK"
-        android:fontFamily="@font/bad_script"/>
+        />
 
     <TextView
         android:id="@+id/textView4"
@@ -33,21 +33,19 @@
         android:layout_marginEnd="77dp"
 
         android:background="@android:color/background_light"
-        android:fontFamily="@font/bad_script"
         android:textColor="@android:color/black" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView4"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="194dp"
         android:background="@android:color/background_light"
-        android:ems="10"
-        android:fontFamily="@font/bad_script"
 
+        android:ems="10"
         android:inputType="textPersonName"
         android:text="Enter your soft token code" />
 
@@ -61,8 +59,8 @@
         android:layout_marginTop="-32dp"
 
         android:background="@android:color/background_light"
-        android:fontFamily="@font/bad_script"
+
         android:text="Desctiption text"
         android:textColor="@android:color/black" />
-
+    <!-- android:fontFamily="@font/bad_script" -->
 </RelativeLayout>
