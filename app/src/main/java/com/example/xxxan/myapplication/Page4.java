@@ -1,5 +1,6 @@
 package com.example.xxxan.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,7 +9,8 @@ import android.widget.Toast;
 
 import com.goodiebag.pinview.Pinview;
 
-public class Page4 extends AppCompatActivity {
+public class
+Page4 extends AppCompatActivity {
     Pinview pin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +27,13 @@ public class Page4 extends AppCompatActivity {
         pin.setPinBackgroundRes(R.drawable.sample_background);
         pin.setInputType(Pinview.InputType.NUMBER);
         //pin.setValue("1234");
+
         pin.setPinViewEventListener(new Pinview.PinViewEventListener() {
             @Override
             public void onDataEntered(Pinview pinview, boolean fromUser) {
                 //Make api calls here or what not
-                Toast.makeText(Page4.this, pinview.getValue(), Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(Page4.this, Main5Activity.class);
+                startActivity(i);
             }
         });
     }

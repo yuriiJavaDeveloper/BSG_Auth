@@ -1,7 +1,7 @@
 <resources>
     <string name="desctiptionText">Desctiption text</string>
     <string name="allDesc">..................</string>
-    <string name="QRcode">Scan QR Cide</string>
+    <string name="QRcode">Scan QR Code</string>
     <string name="enterCode">Enter code manually</string>
     <string name="app_name">My Application</string>
     <string name="title_activity_main2">Enter code manually</string>
@@ -18,5 +18,9 @@
     <string name="connected">Connected devices</string>
     <string name="del">Delete account</string>
     <string name="logOut">Log out</string>
+    <string name="title_activity_page6">Page6</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
 

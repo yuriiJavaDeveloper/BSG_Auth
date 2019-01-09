@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartActivity"
+        <activity
+            android:name=".StartActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Page3"/>
-        <activity android:name=".Page4"/>
-        <!--<activity android:name=".StartActivity"></activity>-->
-        <activity android:name=".Activity9"
+        <activity android:name=".Page3" />
+        <activity android:name=".Page4" />
+        <!-- <activity android:name=".StartActivity"></activity> -->
         <activity
             android:name=".Activity9"
             android:label="@string/title_activity_main2"
@@ -45,7 +45,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Main7Activity" />
         <activity android:name=".Main8Activity" />
-        <activity android:name=".Main5Activity"></activity>
+        <activity android:name=".Main5Activity" />
+        <activity
+            android:name=".Page12"
+            android:label="@string/title_activity_page6"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

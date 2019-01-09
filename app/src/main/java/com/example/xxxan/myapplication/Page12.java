@@ -1,5 +1,6 @@
 package com.example.xxxan.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -32,6 +33,8 @@ public class Page12 extends AppCompatActivity {
             @Override
             public void onDataEntered(Pinview pinview, boolean fromUser) {
                 //Make api calls here or what not
+                Intent  i = new Intent(Page12.this, Main5Activity.class);
+                startActivity(i);
                 Toast.makeText(Page12.this, pinview.getValue(), Toast.LENGTH_SHORT).show();
             }
         });
