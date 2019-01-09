@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    android:id = "@+id/menupop">
+    <item
+        android:id="@+id/menu1"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/connected"/>
+    <item
+        android:id="@+id/menu2"
+        android:title="@string/del"/>
+
+    <item
+        android:id="@+id/menu6"
+        android:title="@string/logOut"/>
+</menu>
