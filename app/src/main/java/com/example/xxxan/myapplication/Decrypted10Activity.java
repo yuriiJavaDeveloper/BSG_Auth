@@ -2,6 +2,7 @@ package com.example.xxxan.myapplication;
 
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.os.Build;
@@ -17,7 +18,7 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 import static android.Manifest.permission.CAMERA;
 
-public class Main8Activity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
+public class Decrypted10Activity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
 
     private static final int REQUEST_CAMERA = 1;
     private ZXingScannerView scannerView;
@@ -26,7 +27,6 @@ public class Main8Activity extends AppCompatActivity implements ZXingScannerView
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         scannerView = new ZXingScannerView(this);
         setContentView(scannerView);
         int currentApiVersion = Build.VERSION.SDK_INT;
@@ -111,7 +111,7 @@ public class Main8Activity extends AppCompatActivity implements ZXingScannerView
     }
 
     private void showMessageOKCancel(String message, DialogInterface.OnClickListener okListener) {
-        new android.support.v7.app.AlertDialog.Builder(Main8Activity.this)
+        new android.support.v7.app.AlertDialog.Builder(Decrypted10Activity.this)
                 .setMessage(message)
                 .setPositiveButton("OK", okListener)
                 .setNegativeButton("Cancel", null)
@@ -121,7 +121,9 @@ public class Main8Activity extends AppCompatActivity implements ZXingScannerView
 
     @Override
     public void handleResult(Result result) {
-        Main7Activity.text.setText(result.getText());
+        String res = result.getText();
+        Intent intent = new Intent();
+        intent.putExtra("RESULT", res);
         onBackPressed();
     }
 }

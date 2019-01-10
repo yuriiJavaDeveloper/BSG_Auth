@@ -9,8 +9,6 @@ import android.os.Bundle;
 import android.security.keystore.KeyGenParameterSpec;
 import android.security.keystore.KeyPermanentlyInvalidatedException;
 import android.security.keystore.KeyProperties;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -34,7 +32,7 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
 
-public class Activity11 extends AppCompatActivity {
+public class Decrypted8Activity extends AppCompatActivity {
 
     private static final String KEY_NAME = "example_key";
     private FingerprintManager fingerprintManager;
@@ -46,12 +44,12 @@ public class Activity11 extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_11);
+        setContentView(R.layout.activity_decrypted8);
         Button but4 = findViewById(R.id.button4);
         but4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(Activity11.this, Page12.class);
+                Intent a = new Intent(Decrypted8Activity.this, Decrypted9Activity.class);
                 startActivity(a);
             }
         });

@@ -9,14 +9,14 @@ import android.widget.EditText;
 
 import com.hbb20.CountryCodePicker;
 
-public class StartActivity extends AppCompatActivity {
+public class Decrypted1Activity extends AppCompatActivity {
     Button buttonNext;
     CountryCodePicker ccp;
     EditText editTextCarrierNumber;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start);
+        setContentView(R.layout.activity_decrypted1);
         ccp = (CountryCodePicker) findViewById(R.id.ccp);
         editTextCarrierNumber = (EditText) findViewById(R.id.editText_carrierNumber);
         ccp.registerCarrierNumberEditText(editTextCarrierNumber);
@@ -24,7 +24,7 @@ public class StartActivity extends AppCompatActivity {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(StartActivity.this, Page3.class);
+                Intent i = new Intent(Decrypted1Activity.this, Decrypted2Activity.class);
                 i.putExtra("RESULT", ccp.getFullNumberWithPlus());
                 startActivity(i);
             }

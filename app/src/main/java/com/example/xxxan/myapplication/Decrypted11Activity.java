@@ -1,7 +1,6 @@
 package com.example.xxxan.myapplication;
 
 import android.content.Context;
-import android.graphics.pdf.PdfRenderer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -18,7 +17,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-class Page6 extends AppCompatActivity {
+public class Decrypted11Activity extends AppCompatActivity {
     ArrayList<Device> ald;
     ArrayList<Device> copy;
     Switch simpleSwitch;
@@ -28,9 +27,9 @@ class Page6 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_page6);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_decrypted11);
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("Connected devices");
@@ -58,13 +57,13 @@ class Page6 extends AppCompatActivity {
             public void onClick(View view) {
                 String statusSwitch1, statusSwitch2;
                 if (simpleSwitch.isChecked()) {
-                    ma = new MyAdapter(Page6.this, ald);
+                    ma = new MyAdapter(Decrypted11Activity.this, ald);
                     lv.setAdapter(ma);
                 } else
                 {
                     copy = new ArrayList<Device>();
                     copy.add(ald.get(0));
-                    ma = new MyAdapter(Page6.this, copy);
+                    ma = new MyAdapter(Decrypted11Activity.this, copy);
                     lv.setAdapter(ma);
                 }
             }
@@ -122,12 +121,5 @@ class Page6 extends AppCompatActivity {
             ((Button) view.findViewById(R.id.button)).setText("Delete" + position);
             return view;
         }
-    }
-}
-class Device{
-    String name, date;
-    int image;
-    public Device(String name, String date, int image){
-        this.date = date; this.name = name; this.image = image;
     }
 }
