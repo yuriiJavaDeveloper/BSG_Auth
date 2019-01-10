@@ -1,6 +1,7 @@
 package com.example.xxxan.myapplication;
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.CancellationSignal;
@@ -58,6 +59,8 @@ public class FingerprintHandler extends
         Toast.makeText(appContext,
                 "Authentication succeeded.",
                 Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(appContext, Decrypted4Activity.class);
+        appContext.startActivity(intent);
     }
 
 }
