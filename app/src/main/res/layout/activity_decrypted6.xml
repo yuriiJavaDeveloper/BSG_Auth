@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity9">
+    tools:context=".Decrypted6Activity">
  <!--   android:background="@drawable/bgdark" -->
 
     <android.support.design.widget.AppBarLayout
@@ -22,6 +22,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_9" />
+    <include layout="@layout/content_decrypted6" />
 
 </android.support.design.widget.CoordinatorLayout>

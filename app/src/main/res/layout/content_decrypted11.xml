@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Page6"
-    tools:showIn="@layout/activity_page6">
+    tools:context=".Decrypted11Activity"
+    tools:showIn="@layout/activity_decrypted11">
+
     <Switch
         android:id="@+id/switch1"
         android:layout_width="match_parent"

@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Activity11"
-    tools:showIn="@layout/activity_11">
+    tools:context=".Decrypted8Activity"
+    tools:showIn="@layout/activity_decrypted8">
 
     <Button
         android:id="@+id/button4"

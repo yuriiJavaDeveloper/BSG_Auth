@@ -8,12 +8,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class Page3 extends AppCompatActivity {
+public class Decrypted2Activity extends AppCompatActivity {
     Button buttonSendSMS;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page3);
+        setContentView(R.layout.activity_decrypted2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -25,7 +25,7 @@ public class Page3 extends AppCompatActivity {
         buttonSendSMS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Page3.this, Page4.class);
+                Intent i = new Intent(Decrypted2Activity.this, Decrypted3Activity.class);
                 startActivity(i);
             }
         });

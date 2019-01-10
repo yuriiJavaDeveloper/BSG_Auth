@@ -5,17 +5,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.goodiebag.pinview.Pinview;
 
-public class
-Page4 extends AppCompatActivity {
+public class Decrypted3Activity extends AppCompatActivity {
     Pinview pin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_page4);
+        setContentView(R.layout.activity_decrypted3);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 
@@ -32,7 +30,7 @@ Page4 extends AppCompatActivity {
             @Override
             public void onDataEntered(Pinview pinview, boolean fromUser) {
                 //Make api calls here or what not
-                Intent i = new Intent(Page4.this, Main5Activity.class);
+                Intent i = new Intent(Decrypted3Activity.this, Decrypted4Activity.class);
                 startActivity(i);
             }
         });

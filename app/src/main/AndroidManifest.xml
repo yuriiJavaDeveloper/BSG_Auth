@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".StartActivity"
+            android:name=".Decrypted1Activity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,31 +25,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Page3" />
-        <activity android:name=".Page4" />
+        <activity android:name=".Decrypted2Activity" />
+        <activity android:name=".Decrypted3Activity" />
+        <activity android:name=".Decrypted4Activity" />
+        <activity android:name=".Decrypted5Activity" />
         <!-- <activity android:name=".StartActivity"></activity> -->
         <activity
-            android:name=".Activity9"
+            android:name=".Decrypted6Activity"
             android:label="@string/title_activity_main2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity10"
+            android:name=".Decrypted7Activity"
             android:label="@string/title_activity_main3"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity11"
+            android:name=".Decrypted8Activity"
             android:label="@string/title_activity_main4"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Main7Activity" />
-        <activity android:name=".Main8Activity" />
-        <activity android:name=".Main5Activity" />
         <activity
-            android:name=".Page12"
+            android:name=".Decrypted9Activity"
             android:label="@string/title_activity_page6"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Decrypted10Activity" />
+        <activity android:name=".Decrypted11Activity" />
     </application>
 
 </manifest>

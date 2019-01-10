@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Page4"
-    tools:showIn="@layout/activity_page4"
+    tools:context=".Decrypted3Activity"
+    tools:showIn="@layout/activity_decrypted3"
     android:screenOrientation="portrait"
     >
 

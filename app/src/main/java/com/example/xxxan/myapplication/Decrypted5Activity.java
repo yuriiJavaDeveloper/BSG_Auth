@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class Main7Activity extends AppCompatActivity {
-    public static TextView text;
+public class Decrypted5Activity extends AppCompatActivity {
+    public TextView text;
     Button buttonScan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main7);
+        setContentView(R.layout.activity_decrypted5);
 
         text = findViewById(R.id.textDesc);
         buttonScan = findViewById(R.id.buttonQRcode);
@@ -21,14 +21,18 @@ public class Main7Activity extends AppCompatActivity {
         buttonScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), Main8Activity.class));
+                Intent intent = new Intent(Decrypted5Activity.this, Decrypted10Activity.class);
+                startActivity(intent);
+                Bundle bundle = getIntent().getExtras();
+                String res = bundle.getString("RESULT");
+                text.setText(res);
             }
         });
         Button code = findViewById(R.id.buttonCode);
         code.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Main7Activity.this,Activity9.class);
+                Intent i = new Intent(Decrypted5Activity.this, Decrypted6Activity.class);
                 startActivity(i);
             }
         });
