@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Decrypted5Activity extends AppCompatActivity {
-    public TextView text;
+    TextView text;
     Button buttonScan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +24,14 @@ public class Decrypted5Activity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Decrypted5Activity.this, Decrypted10Activity.class);
                 startActivity(intent);
-                Bundle bundle = getIntent().getExtras();
-                String res = bundle.getString("RESULT");
-                text.setText(res);
             }
         });
+      /*  if(check == true) {
+            Bundle bd = getIntent().getExtras();
+            String getName = (String) bd.get("QRESULT");
+            Toast.makeText(getApplicationContext(), "getName", Toast.LENGTH_LONG).show();
+            check = false;
+        }*/
         Button code = findViewById(R.id.buttonCode);
         code.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +40,7 @@ public class Decrypted5Activity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
     }
 }
 
