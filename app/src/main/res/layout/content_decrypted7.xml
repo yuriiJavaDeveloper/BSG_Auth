@@ -20,7 +20,7 @@
         android:layout_marginBottom="61dp"
         android:background="@android:color/background_light"
         android:onClick="onButtonClick"
-        android:text="OK" />
+        android:text="@string/buutonOK" />
 
     <TextView
         android:id="@+id/textView4"
@@ -44,7 +44,7 @@
         android:layout_marginStart="77dp"
         android:layout_marginBottom="-49dp"
         android:background="@android:color/background_light"
-        android:text="Desctiption text"
+        android:text="@string/desctiptionText"
         android:textColor="@android:color/black" />
 
     <TextView
@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
-        android:text="One time pass is : ---"
+        android:text="@string/oneTimePass"
         android:textSize="28sp" />
 
 </RelativeLayout>

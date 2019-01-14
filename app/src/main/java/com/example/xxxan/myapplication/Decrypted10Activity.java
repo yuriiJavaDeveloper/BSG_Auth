@@ -19,7 +19,7 @@ import me.dm7.barcodescanner.zxing.ZXingScannerView;
 import static android.Manifest.permission.CAMERA;
 
 public class Decrypted10Activity extends AppCompatActivity implements ZXingScannerView.ResultHandler {
-
+    String res;
     private static final int REQUEST_CAMERA = 1;
     private ZXingScannerView scannerView;
     private static int camId = Camera.CameraInfo.CAMERA_FACING_BACK;
@@ -121,9 +121,8 @@ public class Decrypted10Activity extends AppCompatActivity implements ZXingScann
 
     @Override
     public void handleResult(Result result) {
-        String res = result.getText();
         Intent intent = new Intent();
-        intent.putExtra("RESULT", res);
+        intent.putExtra("QRESULT", result.getText());
         onBackPressed();
     }
 }

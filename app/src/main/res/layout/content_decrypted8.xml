@@ -18,7 +18,7 @@
         android:layout_marginStart="59dp"
         android:layout_marginTop="213dp"
         android:layout_marginEnd="57dp"
-        android:text="Auth with pin code"
+        android:text="@string/authPinCode"
         android:textAllCaps="false"
         android:textSize="20sp" />
 

@@ -32,22 +32,22 @@
         <!-- <activity android:name=".StartActivity"></activity> -->
         <activity
             android:name=".Decrypted6Activity"
-            android:label="@string/title_activity_main2"
+            android:label="@string/enterCodedManually"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Decrypted7Activity"
-            android:label="@string/title_activity_main3"
+            android:label="@string/decryptMessage"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Decrypted8Activity"
-            android:label="@string/title_activity_main4"
+            android:label="@string/auth"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Decrypted9Activity"
-            android:label="@string/title_activity_page6"
+            android:label="@string/title_page6"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Decrypted10Activity" />
         <activity android:name=".Decrypted11Activity" />
